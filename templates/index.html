@@ -5,5 +5,17 @@
 </head>
 <body>
     <h1>你好，Flask！</h1>
+    <p>My name {{name}}</p>
+    <p>My age {{age}}</p>
+    <ul>
+        {% for agony in agonys %}
+            <li>{{ agony }}</li>
+        {% endfor %}
+    </ul>
+    <h1>我的基本資料</h1>
+    <p>目前工作:{{info.job}}</p>
+    <p>興趣:{{info.hobby}}</p>
+    <p>喜好食物:{{info.favorite_food}}</p>
+    <p>喜好顏色:{{info.favorite_color}}</p>
 </body>
 </html>
