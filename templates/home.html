@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS 練習</title>
+  </head>
+  <body>
+    <h1>JavaScript 測試</h1>
+    <button onclick="clickMe()">點我</button>
+    <p id="output"></p>
+    <p id="output2"></p>
+    <p id="demo"></p>
+
+    <script>
+      var x="Hello";
+      var y="World";
+      function clickMe() {
+        document.getElementById("output").innerText = "你點到我了！";
+      }
+      document.getElementById("output2").innerText = (x+y);
+    </script>
+    <script src="learn.js" defer></script>
+  </body>
+</html>

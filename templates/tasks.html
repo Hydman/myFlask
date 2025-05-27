@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>任務清單</title>
+</head>
+<body>
+    <h1>任務清單</h1>
+
+    <form method="POST" action="{{ url_for('main.tasks_view') }}">
+        <input type="text" name="task" placeholder="輸入新任務" required />
+        <button type="submit">新增任務</button>
+    </form>
+
+    <ul>
+        {% for task in tasks %}
+        <li>{{ task }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
